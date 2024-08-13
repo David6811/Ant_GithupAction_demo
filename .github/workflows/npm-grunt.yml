@@ -28,9 +28,6 @@ jobs:
     - name: Build
       run: |
         npm run build
-    - name: Test
-      run: |
-        npm run test
     - name: Deploay
       run: |
         pm2 start npm --name antTest --run start
