@@ -28,7 +28,13 @@ jobs:
     - name: Build
       run: |
         npm run build
-    - name: Deploay
+    - name: Build
       run: |
-        pm2 start npm --name antTest --run start
+        npm run build
+    - name: Install PM2 globally
+      run: |
+        npm install -g pm2
+    - name: Start application with PM2
+      run: |
+        pm2 start npm --name antTest -- start
       
