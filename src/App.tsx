@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button } from 'antd';
+import { ConfigProvider } from 'antd';
+import MyApp from './MyApp';
 
 const App: React.FC = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
+  <ConfigProvider theme={{ token: { colorPrimary: '#00b96b' } }}>
+    <MyApp />
+  </ConfigProvider>
 );
 
 export default App;
