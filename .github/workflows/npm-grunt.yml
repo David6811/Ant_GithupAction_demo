@@ -41,5 +41,8 @@ jobs:
         fi
 
     - name: Start application with PM2
-      run: nohup pm2 start npm --name antTest -- start &> /dev/null &
+      run: pm2 start npm --name antTest -- start
+           pm2 save
+
+           
       
