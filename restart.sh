@@ -1,2 +1,2 @@
-pm2 delete antTest
-pm2 start sudo npm --name antTest1 -- start
+pm2 delete antTest1
+pm2 start sudo npm --name antTest -- start
