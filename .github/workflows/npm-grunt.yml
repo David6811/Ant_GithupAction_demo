@@ -41,8 +41,7 @@ jobs:
         fi
 
     - name: Start application with PM2
-      run: pm2 start sudo npm --name antTest -- start
-           pm2 save
+      run: chmod +x restart.sh && RUNNER_TRACKING_ID='' && ./restart.sh &
 
            
       
