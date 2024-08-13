@@ -41,7 +41,7 @@ jobs:
         fi
 
     - name: Start application with PM2
-      run: sudo pm2 start npm --name antTest -- start
+      run: sudo pm2 start sudo npm --name antTest -- start
            sudo pm2 save
 
            
